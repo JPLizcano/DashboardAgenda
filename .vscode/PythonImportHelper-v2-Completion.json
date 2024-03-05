@@ -1,0 +1,88 @@
+[
+    {
+        "label": "Dash",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "html",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "dash_table",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "dcc",
+        "importPath": "dash",
+        "description": "dash",
+        "isExtraImport": true,
+        "detail": "dash",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "dash_bootstrap_components",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dash_bootstrap_components",
+        "description": "dash_bootstrap_components",
+        "detail": "dash_bootstrap_components",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Dashboard",
+        "description": "Dashboard",
+        "peekOfCode": "df = pd.read_csv('ventas.csv')\n# Initialize the app\napp = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])\n# App layout\napp.layout = html.Div([\n    dbc.Row(dbc.Col(html.H2('Sales Dashboard'),\n                    style={'textAlign': 'center', 'color': 'blue', 'fontSize': 30, 'marginTop': 20, 'marginBottom': 20})),\n    dbc.Row([\n        dbc.Col(dash_table.DataTable(data=df.to_dict('records'), page_size=10)),\n    ], style={'fontSize': 12, 'padding': 20}),",
+        "detail": "Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Dashboard",
+        "description": "Dashboard",
+        "peekOfCode": "app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])\n# App layout\napp.layout = html.Div([\n    dbc.Row(dbc.Col(html.H2('Sales Dashboard'),\n                    style={'textAlign': 'center', 'color': 'blue', 'fontSize': 30, 'marginTop': 20, 'marginBottom': 20})),\n    dbc.Row([\n        dbc.Col(dash_table.DataTable(data=df.to_dict('records'), page_size=10)),\n    ], style={'fontSize': 12, 'padding': 20}),\n    dbc.Row([\n        dbc.Col(dcc.Graph(figure=px.histogram(df, x='Id', y='Nombre',)),",
+        "detail": "Dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "app.layout",
+        "kind": 5,
+        "importPath": "Dashboard",
+        "description": "Dashboard",
+        "peekOfCode": "app.layout = html.Div([\n    dbc.Row(dbc.Col(html.H2('Sales Dashboard'),\n                    style={'textAlign': 'center', 'color': 'blue', 'fontSize': 30, 'marginTop': 20, 'marginBottom': 20})),\n    dbc.Row([\n        dbc.Col(dash_table.DataTable(data=df.to_dict('records'), page_size=10)),\n    ], style={'fontSize': 12, 'padding': 20}),\n    dbc.Row([\n        dbc.Col(dcc.Graph(figure=px.histogram(df, x='Id', y='Nombre',)),\n                style={'padding': 20}),\n        dbc.Col(dcc.Graph(figure=px.histogram(df, x='Id', y='Pais', color_discrete_sequence=['#FF6000'])),",
+        "detail": "Dashboard",
+        "documentation": {}
+    }
+]
